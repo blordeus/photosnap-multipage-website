@@ -7,7 +7,7 @@ export const homeSections = [
       "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
     image: createImageSet(
       "home",
-      "hero.jpg",
+      "create-and-share.jpg",
       "Person standing on a dock at sunset"
     ),
     dark: true,

@@ -25,8 +25,7 @@ export default function StoryCard({
       className="group relative block min-h-[375px] overflow-hidden bg-black text-white transition duration-300 hover:-translate-y-6 md:min-h-[500px]"
     >
       <picture>
-        <source media="(min-width: 1024px)" srcSet={image.desktop} />
-        <source media="(min-width: 768px)" srcSet={image.tablet} />
+        <source media="(min-width: 768px)" srcSet={image.desktop} />
         <Image
           src={image.mobile}
           alt={image.alt}

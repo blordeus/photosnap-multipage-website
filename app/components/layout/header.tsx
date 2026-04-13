@@ -68,17 +68,13 @@ export default function Header() {
 
         <button
           type="button"
-          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-label="Open menu"
           aria-expanded={isOpen}
-          onClick={() => setIsOpen((prev) => !prev)}
+          onClick={() => setIsOpen(true)}
           className="inline-flex md:hidden"
         >
           <Image
-            src={
-              isOpen
-                ? "/assets/shared/close.svg"
-                : "/assets/shared/hamburger.svg"
-            }
+            src="/assets/shared/menu.svg"
             alt=""
             width={20}
             height={20}

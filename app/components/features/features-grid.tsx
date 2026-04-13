@@ -12,7 +12,7 @@ export default function FeatureGrid({ extended = false }: FeatureGridProps) {
     <section className="bg-white px-8 py-20 md:px-10 md:py-28 lg:px-[165px] lg:py-40">
       <div
         className={[
-          "mx-auto grid max-w-[1110px] gap-x-[30px] gap-y-14",
+          "mx-auto grid max-w-[1110px] gap-x-[30px] gap-y-16 md:gap-y-20",
           extended ? "md:grid-cols-2 lg:grid-cols-3" : "md:grid-cols-3",
         ].join(" ")}
       >

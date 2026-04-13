@@ -3,7 +3,7 @@ import { compareFeatures } from "@/data/pricing";
 
 export default function CompareTable() {
   return (
-    <section className="bg-white px-7 pb-16 pt-4 md:px-10 md:pb-[112px] lg:px-[355px]">
+    <section className="bg-white px-7 pb-16 pt-16 md:px-10 md:pb-[112px] md:pt-[80px] lg:px-[355px]">
       <div className="mx-auto max-w-[731px]">
         <h2 className="hidden text-center text-[40px] font-bold uppercase leading-[48px] tracking-[4.17px] md:block">
           Compare
@@ -28,19 +28,19 @@ export default function CompareTable() {
 
               <span className="flex justify-center">
                 {feature.basic ? (
-                  <Image src="/assets/shared/check.svg" alt="" width={16} height={12} />
+                  <Image src="/assets/images/pricing/desktop/check.svg" alt="" width={16} height={12} />
                 ) : null}
               </span>
 
               <span className="flex justify-center">
                 {feature.pro ? (
-                  <Image src="/assets/shared/check.svg" alt="" width={16} height={12} />
+                  <Image src="/assets/images/pricing/desktop/check.svg" alt="" width={16} height={12} />
                 ) : null}
               </span>
 
               <span className="flex justify-center">
                 {feature.business ? (
-                  <Image src="/assets/shared/check.svg" alt="" width={16} height={12} />
+                  <Image src="/assets/images/pricing/desktop/check.svg" alt="" width={16} height={12} />
                 ) : null}
               </span>
             </div>
@@ -66,7 +66,7 @@ export default function CompareTable() {
                     </p>
                     <div className="mt-2 h-4">
                       {feature.basic ? (
-                        <Image src="/assets/shared/check.svg" alt="" width={16} height={12} />
+                        <Image src="/assets/images/pricing/desktop/check.svg" alt="" width={16} height={12} />
                       ) : null}
                     </div>
                   </div>
@@ -77,7 +77,7 @@ export default function CompareTable() {
                     </p>
                     <div className="mt-2 h-4">
                       {feature.pro ? (
-                        <Image src="/assets/shared/check.svg" alt="" width={16} height={12} />
+                        <Image src="/assets/images/pricing/desktop/check.svg" alt="" width={16} height={12} />
                       ) : null}
                     </div>
                   </div>
@@ -88,7 +88,7 @@ export default function CompareTable() {
                     </p>
                     <div className="mt-2 h-4">
                       {feature.business ? (
-                        <Image src="/assets/shared/check.svg" alt="" width={16} height={12} />
+                        <Image src="/assets/images/pricing/desktop/check.svg" alt="" width={16} height={12} />
                       ) : null}
                     </div>
                   </div>
