@@ -1,5 +1,5 @@
 import FeatureSplitSection from "@/app/components/shared/feature-split-section";
-import PricingTable from "@/app/components/pricing/pricing-card";
+import PricingTable from "@/app/components/pricing/pricing-table";
 import CompareTable from "@/app/components/pricing/compare-table";
 import CTA from "@/app/components/shared/cta";
 import PageHero from "@/app/components/shared/page-hero";

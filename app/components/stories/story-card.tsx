@@ -22,7 +22,7 @@ export default function StoryCard({
   return (
     <Link
       href="#"
-      className="group relative block min-h-[375px] overflow-hidden bg-black text-white md:min-h-[500px]"
+      className="group relative block min-h-[375px] overflow-hidden bg-black text-white transition duration-300 hover:-translate-y-6 md:min-h-[500px]"
     >
       <picture>
         <source media="(min-width: 1024px)" srcSet={image.desktop} />

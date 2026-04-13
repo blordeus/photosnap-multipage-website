@@ -3,7 +3,7 @@ import { navLinks } from "@/data/nav";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "@/app/components/ui/button";
-import MobileMenu from "@/components/layout/mobile-menu";
+import MobileMenu from "@/app/components/layout/mobile-menu";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 

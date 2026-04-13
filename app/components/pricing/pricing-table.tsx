@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import PricingCard from "@/components/pricing/pricing-card";
+import PricingCard from "@/app/components/pricing/pricing-card";
 import { pricingPlans } from "@/data/pricing";
 
 export default function PricingTable() {
@@ -15,8 +15,10 @@ export default function PricingTable() {
           <button
             type="button"
             onClick={() => setBilling("monthly")}
-            className={`text-[18px] font-bold leading-[25px] ${
-              billing === "monthly" ? "text-black" : "text-black/50"
+            className={`text-[18px] font-bold leading-[25px] transition ${
+              billing === "monthly"
+                ? "text-black"
+                : "text-black/50 hover:text-black"
             }`}
           >
             Monthly
@@ -28,7 +30,8 @@ export default function PricingTable() {
               setBilling((prev) => (prev === "monthly" ? "yearly" : "monthly"))
             }
             aria-label="Toggle billing period"
-            className="relative h-8 w-16 rounded-full bg-[#dfdfdf]"
+            aria-pressed={billing === "yearly"}
+            className="relative h-8 w-16 rounded-full bg-[#dfdfdf] transition hover:bg-black/25"
           >
             <span
               className={`absolute top-1 h-6 w-6 rounded-full bg-black transition ${
@@ -40,8 +43,10 @@ export default function PricingTable() {
           <button
             type="button"
             onClick={() => setBilling("yearly")}
-            className={`text-[18px] font-bold leading-[25px] ${
-              billing === "yearly" ? "text-black" : "text-black/50"
+            className={`text-[18px] font-bold leading-[25px] transition ${
+              billing === "yearly"
+                ? "text-black"
+                : "text-black/50 hover:text-black"
             }`}
           >
             Yearly
@@ -55,6 +60,7 @@ export default function PricingTable() {
               name={plan.name}
               description={plan.description}
               price={plan.price}
+              billing={billing}
               isFeatured={plan.isFeatured}
             />
           ))}

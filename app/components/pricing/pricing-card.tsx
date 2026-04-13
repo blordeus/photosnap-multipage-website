@@ -2,6 +2,7 @@ type PricingCardProps = {
   name: string;
   description: string;
   price: number;
+  billing: "monthly" | "yearly";
   isFeatured?: boolean;
 };
 
@@ -9,12 +10,13 @@ export default function PricingCard({
   name,
   description,
   price,
+  billing,
   isFeatured = false,
 }: PricingCardProps) {
   return (
     <article
       className={[
-        "relative flex flex-col px-[43px] py-14 text-center md:grid md:grid-cols-[1fr_auto] md:items-center md:gap-x-10 md:text-left lg:flex lg:text-center",
+        "relative flex flex-col px-[43px] py-14 text-center md:grid md:grid-cols-[1fr_auto] md:items-center md:gap-x-10 md:text-left lg:flex lg:h-full lg:text-center",
         isFeatured
           ? "bg-black text-white lg:-my-10 lg:py-[88px]"
           : "bg-[#f5f5f5] text-black",
@@ -46,7 +48,7 @@ export default function PricingCard({
             isFeatured ? "text-white/60" : "text-black/60",
           ].join(" ")}
         >
-          per month
+          {billing === "monthly" ? "per month" : "per year"}
         </p>
       </div>
 

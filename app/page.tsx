@@ -6,7 +6,6 @@ import StoryCard from "@/app/components/stories/story-card";
 import StoriesGrid from "@/app/components/stories/stories-grid";
 import FeatureGrid from "@/app/components/features/features-grid";
 import CTA from "@/app/components/shared/cta";
-import { homeSections } from "@/data/home";
 
 export default function HomePage() {
   return (

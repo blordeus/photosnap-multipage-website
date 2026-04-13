@@ -17,7 +17,7 @@ export default function SocialIcons() {
           key={social.name}
           href={social.href}
           aria-label={social.name}
-          className="transition hover:opacity-70"
+          className="transition duration-300 hover:opacity-60"
         >
           <Image
             src={social.icon}
