@@ -1,4 +1,3 @@
-import FeatureSplitSection from "@/app/components/shared/feature-split-section";
 import FeatureGrid from "@/app/components/features/features-grid";
 import CTA from "@/app/components/shared/cta";
 import PageHero from "@/app/components/shared/page-hero";

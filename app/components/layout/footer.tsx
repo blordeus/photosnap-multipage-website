@@ -1,8 +1,6 @@
 import Image from "next/image";
 import SocialIcons from "@/app/components/shared/social-icons";
-import Container from "@/app/components/ui/container";
 import Link from "next/link";
-import Button from "@/app/components/ui/button";
 import { navLinks } from "@/data/nav";
 
 export default function Footer() {

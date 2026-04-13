@@ -1,4 +1,3 @@
-import FeatureSplitSection from "@/app/components/shared/feature-split-section";
 import PricingTable from "@/app/components/pricing/pricing-table";
 import CompareTable from "@/app/components/pricing/compare-table";
 import CTA from "@/app/components/shared/cta";

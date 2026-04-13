@@ -1,6 +1,3 @@
-import Button from "@/app/components/ui/button";
-import ResponsiveImage from "@/app/components/shared/responsive-image";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 

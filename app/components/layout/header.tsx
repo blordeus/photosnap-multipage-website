@@ -1,10 +1,8 @@
 "use client";
 
-import Container from "@/app/components/ui/container";
 import { navLinks } from "@/data/nav";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "@/app/components/ui/button";
 import MobileMenu from "@/app/components/layout/mobile-menu";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
