@@ -13,7 +13,7 @@ export default function FeatureGrid({ extended = false }: FeatureGridProps) {
       <div
         className={[
           "mx-auto grid max-w-[1110px] gap-x-[30px] gap-y-16 md:gap-y-20",
-          extended ? "md:grid-cols-2 lg:grid-cols-3" : "md:grid-cols-3",
+          extended ? "md:grid-cols-2 lg:grid-cols-3" : "lg:grid-cols-3",
         ].join(" ")}
       >
         {items.map((feature) => (

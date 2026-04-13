@@ -23,7 +23,7 @@ export default function PricingCard({
       ].join(" ")}
     >
       {isFeatured ? (
-        <div className="absolute left-0 top-0 h-[6px] w-full bg-[image:var(--gradient-6)] lg:h-full lg:w-[6px]" />
+        <div className="absolute left-0 top-0 h-[6px] w-full bg-[image:var(--gradient-6)] md:h-full md:w-[6px]" />
       ) : null}
 
       <div>

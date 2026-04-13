@@ -14,7 +14,7 @@ type PageHeroProps = {
 export default function PageHero({ title, description, image }: PageHeroProps) {
   return (
     <section className="bg-black">
-      <div className="grid md:grid-cols-[495px_1fr] lg:grid-cols-[610px_1fr]">
+      <div className="grid md:grid-cols-[273px_1fr] lg:grid-cols-[610px_1fr]">
         <div className="relative order-2 bg-black px-7 py-[72px] text-white md:order-1 md:flex md:items-center md:px-[54px] md:py-[173px] lg:px-[112px]">
           <div className="absolute left-0 top-0 h-[6px] w-32 bg-[image:var(--gradient-6)] md:top-1/2 md:h-[304px] md:w-[6px] md:-translate-y-1/2" />
 
