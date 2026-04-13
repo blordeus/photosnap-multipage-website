@@ -1,32 +1,43 @@
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-type ButtonProps = {
-  href?: string;
+type Props = {
   children: React.ReactNode;
+  href?: string;
+  variant?: "dark" | "light" | "ghost";
   className?: string;
-  variant?: "dark" | "light";
 };
 
 export default function Button({
-  href = "#",
   children,
-  className,
+  href = "#",
   variant = "dark",
-}: ButtonProps) {
+  className,
+}: Props) {
   return (
     <Link
       href={href}
       className={cn(
-        "inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[2px] transition",
-        variant === "dark"
-          ? "bg-black px-6 py-3 text-white hover:bg-zinc-700"
-          : "bg-white px-6 py-3 text-black hover:bg-zinc-200",
+        "group inline-flex items-center gap-4 text-sm-bold transition",
+        variant === "dark" &&
+          "bg-black px-6 py-3 text-white hover:bg-zinc-800",
+        variant === "light" &&
+          "bg-white px-6 py-3 text-black hover:bg-gray-200",
+        variant === "ghost" &&
+          "text-black hover:opacity-60",
         className
       )}
     >
       <span>{children}</span>
-      <span aria-hidden="true">→</span>
+
+      <Image
+        src="/assets/shared/arrow.svg"
+        alt=""
+        width={16}
+        height={12}
+        className="transition group-hover:translate-x-1"
+      />
     </Link>
   );
 }
