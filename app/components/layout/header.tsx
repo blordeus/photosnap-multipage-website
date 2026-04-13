@@ -1,3 +1,5 @@
+"use client";
+
 import Container from "@/app/components/ui/container";
 import { navLinks } from "@/data/nav";
 import Link from "next/link";
@@ -10,10 +12,6 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
 
   useEffect(() => {
     if (isOpen) {

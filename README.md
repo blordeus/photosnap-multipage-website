@@ -1,36 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Mentor - Photosnap Multi-Page Website
 
-## Getting Started
+This is a solution to the [Photosnap Multi-Page Website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW). The goal of this project was to build a polished multi-page marketing site that matches the provided designs across mobile, tablet, and desktop.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Photosnap is a responsive marketing website with four core pages:
+
+- Home
+- Stories
+- Features
+- Pricing
+
+The project focuses on reusable layout patterns, responsive image handling, interactive hover states, and a clean multi-page structure using modern frontend tools.
+
+## Built With
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- App Router
+- Responsive image assets from the Frontend Mentor challenge
+
+## Features
+
+- Responsive multi-page layout
+- Mobile dropdown navigation menu
+- Shared page hero components
+- Reusable split-section content blocks
+- Story card grid with hover interactions
+- Features grid for home and features pages
+- Pricing toggle for monthly and yearly plans
+- Compare table for pricing features
+- Shared CTA banner
+- Keyboard focus states for accessibility
+
+## Folder Structure
+
+```txt
+app/
+  page.tsx
+  stories/page.tsx
+  features/page.tsx
+  pricing/page.tsx
+
+components/
+  features/
+  layout/
+  pricing/
+  sections/
+  shared/
+  stories/
+
+data/
+lib/
+public/
+  assets/
+    icons/
+    images/
+    shared/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What I Worked On
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project was built in vertical slices so the layout and reusable UI patterns could be verified early.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Core implementation areas
 
-## Learn More
+- Set up a clean Next.js and Tailwind foundation
+- Organized responsive assets by page and breakpoint
+- Created reusable image helpers for consistent responsive paths
+- Built shared layout pieces like the header, footer, and CTA banner
+- Created reusable story cards and content split sections
+- Added pricing toggle behavior and compare table layout
+- Refined mobile and desktop layouts to better match the design files
 
-To learn more about Next.js, take a look at the following resources:
+## Design and UX Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A big part of this build was keeping the UI consistent while switching between layouts across breakpoints. The most important patterns were:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- consistent spacing and typography
+- reusable responsive image handling
+- mobile-first layout decisions
+- keeping hover and focus states intentional
+- avoiding duplicated layout code across pages
 
-## Deploy on Vercel
+## Accessibility
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This build includes:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- semantic page structure
+- keyboard-focus styles for links and buttons
+- accessible button and navigation states
+- readable contrast across light and dark sections
+
+## Screenshots
+
+Add screenshots here before publishing.
+
+### Desktop
+
+![Desktop screenshot](./screenshots/desktop-home.png)
+
+### Tablet
+
+![Tablet screenshot](./screenshots/tablet-home.png)
+
+### Mobile
+
+![Mobile screenshot](./screenshots/mobile-home.png)
+
+## Links
+
+- Solution URL: [Add Frontend Mentor solution link here](#)
+- Live Site URL: [Add live site URL here](#)
+
+## What I Learned
+
+This project helped reinforce a few important frontend habits:
+
+- responsive systems are easier to manage when filenames and folder structures stay consistent
+- reusable components reduce rework across multi-page marketing sites
+- layout accuracy often comes down to spacing, proportions, and image behavior more than complex logic
+- interactive polish like hover states, active states, and focus states makes a static site feel much more complete
+
+## Continued Development
+
+If I revisit this project later, I would focus on:
+
+- refining micro-interactions and transitions
+- tightening any remaining spacing differences against the design files
+- adding more robust accessibility testing
+- reviewing image optimization and performance details
+
+## Useful Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Frontend Mentor](https://www.frontendmentor.io)
+
+## Author
+
+- Frontend Mentor - [@your-frontend-mentor-username](https://www.frontendmentor.io/profile/your-frontend-mentor-username)
+- Portfolio - [Add your portfolio URL here](#)
+
