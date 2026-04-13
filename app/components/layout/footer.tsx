@@ -1,6 +1,6 @@
-import Container from "@/components/ui/container";
+import Container from "@/app/components/ui/container";
 import Link from "next/link";
-import Button from "@/components/ui/button";
+import Button from "@/app/components/ui/button";
 import { navLinks } from "@/data/nav";
 
 export default function Footer() {

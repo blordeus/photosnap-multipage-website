@@ -1,6 +1,6 @@
-import FeatureSplitSection from "@/components/sections/feature-split-section";
-import FeatureGrid from "@/components/features/feature-grid";
-import CTA from "@/components/shared/cta";
+import FeatureSplitSection from "@/app/components/shared/feature-split-section";
+import FeatureGrid from "@/app/components/features/features-grid";
+import CTA from "@/app/components/layout/cta-banner";
 
 export default function FeaturesPage() {
   return (

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/layout/header";
-import Footer from "@/components/layout/footer";
+import Header from "@/app/components/layout/header";
+import Footer from "@/app/components/layout/footer";
 import { DM_Sans } from "next/font/google";
 
 const dmSans = DM_Sans({

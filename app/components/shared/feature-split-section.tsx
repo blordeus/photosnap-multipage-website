@@ -1,5 +1,5 @@
-import Button from "@/components/ui/button";
-import ResponsiveImage from "@/components/shared/responsive-image";
+import Button from "@/app/components/ui/button";
+import ResponsiveImage from "@/app/components/shared/responsive-image";
 import { cn } from "@/lib/utils";
 
 type FeatureSplitSectionProps = {

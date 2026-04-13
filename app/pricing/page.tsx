@@ -1,7 +1,7 @@
-import FeatureSplitSection from "@/components/sections/feature-split-section";
-import PricingTable from "@/components/pricing/pricing-table";
-import CompareTable from "@/components/pricing/compare-table";
-import CTA from "@/components/shared/cta";
+import FeatureSplitSection from "@/app/components/shared/feature-split-section";
+import PricingTable from "@/app/components/pricing/pricing-card";
+import CompareTable from "@/app/components/pricing/compare-table";
+import CTA from "@/app/components/layout/cta-banner";
 
 export default function PricingPage() {
   return (
